@@ -8,7 +8,7 @@
 <link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <div id="header-wrapper">
@@ -38,20 +38,15 @@
 <div id="wrapper">
 	<div id="three-column" class="container">
 		<div class="title">
-			<h2>Community</h2>
-			<span class="byline">Contact me</span>
-		</div>
-		<div class="boxA">
-			<a href="https://www.facebook.com/profile.php?id=100003252636929" title="Facebook → 杜昱成" target="_blank"fa fa-facebook><span class="fa fa-facebook"></span></a>
-			<p></p>
-		</div>
-		<div class="boxB">
-			<a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=tuyucheng0407@gmail.com" title="E-Mail → tuyucheng0407@gmail.com" target="_blank"fa fa-envelope><span class="fa fa-envelope"></span></a>
-			<p></p>
-		</div>
-		<div class="boxC">
-			<a href="https://www.instagram.com/yu_cheng_tu_/?hl=zh-tw" title="Instagram → yu_cheng_tu_" target="_blank"fa fa-instagram><span class="fa fa-instagram"></span></a>
-			<p></p>
+			<h2 align="left">About me</h2>
+			<p>
+					<li align="left" style="font-size: 30px";>18歲，醫學資訊系大一。</li>
+					<li align="left" style="font-size: 30px";>輔大竹友會，五家，活動仔。</li>
+					<li align="left" style="font-size: 30px";>醫資系排，努力學習排球技巧中。</li>
+					<li align="left" style="font-size: 30px";>中纖粉絲，苡任、矮妹超厲害的，<del>雖然我不打舉球跟自由</del>。</li>
+					<li align="left" style="font-size: 30px";>平常興趣是玩遊戲、看動畫、看小說、打排球。</li>
+					<li align="left" style="font-size: 30px";>中文、日文、英文歌都聽，也會彈鋼琴喔。</li>	
+					<li align="left" style="font-size: 30px";></li>
 		</div>
 	</div>
 </div>
@@ -63,13 +58,28 @@
 		</div>
 		<p></p>
 		<ul class="actions">
-			<li><a href="#" class="button">Home</a>
+			<font size="4"><li><a href="https://toikusen.github.io" class="button">Home</a>
 			<footer id = "class"></footer></li></li>
 		</ul>
 	</div>
 </div>
 <div id="copyright" class="container">
 	<p>&copy; 2019 toikusen | Theme by <a href="http://templated.co" rel="nofollow" target="_blank">TEMPLATED</a>.</p>
-</div>	
+</div>
+<button type="button" id="BackTop" class="toTop-arrow"></button>
+<script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+</script>	
 </body>
 </html>

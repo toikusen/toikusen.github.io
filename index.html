@@ -8,6 +8,7 @@
 <link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <div id="header-wrapper">
@@ -59,17 +60,32 @@
 	<div class="container">
 		<div class="title">
 			<h2>霞光</h2>
-			<span class="byline">　　在早晨或傍晚，斜射通過空氣層的太陽光路程比較長，散射減弱得很厲害。減弱由大到小依次是太陽光波中的紫、靛、藍色、紅或橙色光。而霞光都是明暗相間的線條，原本是平行線，因為遠近的透視現象，看起來像似往遠處集中，或是由遠處輻散開來。減弱後的彩色陽光，照射在天穹和雲頂上，就形成耀眼奪目的彩霞。<p><br>　　如果大氣中有微小水滴或塵埃，散射作會用比單純只有空氣分子時更厲害。也因此，陽光透過的遠處低層大氣中，若有小水滴（雲滴）及塵埃存在，霞光的顏色就會比沒有小水滴及塵埃時更加紅。<p>　　在夏季早上，低空穩定的空氣中很少塵埃，要是當時有鮮艷的紅霞，就稱為早霞，這也表示東方低空含有著許多水滴，有雲層存在，隨著太陽升高，熱力對流逐漸向平地發展，雲層也會漸密，壞天氣逐漸逼近，也就是所謂“早霞不出門”的原因。</span>
+			<font size="4"><span class="byline">　　在早晨或傍晚，斜射通過空氣層的太陽光路程比較長，散射減弱得很厲害。減弱由大到小依次是太陽光波中的紫、靛、藍色、紅或橙色光。而霞光都是明暗相間的線條，原本是平行線，因為遠近的透視現象，看起來像似往遠處集中，或是由遠處輻散開來。減弱後的彩色陽光，照射在天穹和雲頂上，就形成耀眼奪目的彩霞。<p><br>　　如果大氣中有微小水滴或塵埃，散射作會用比單純只有空氣分子時更厲害。也因此，陽光透過的遠處低層大氣中，若有小水滴（雲滴）及塵埃存在，霞光的顏色就會比沒有小水滴及塵埃時更加紅。<p>　　在夏季早上，低空穩定的空氣中很少塵埃，要是當時有鮮艷的紅霞，就稱為早霞，這也表示東方低空含有著許多水滴，有雲層存在，隨著太陽升高，熱力對流逐漸向平地發展，雲層也會漸密，壞天氣逐漸逼近，也就是所謂“早霞不出門”的原因。</span>
 		</div>
 		<p></p>
 		<ul class="actions">
-			<li><a href="#" class="button">Home</a>
+			<font size="4"><li><a href="#" class="button">Home</a>
 			<footer id = "class"></footer></li></li>
 		</ul>
 	</div>
 </div>
 <div id="copyright" class="container">
 	<p>&copy; 2019 toikusen | Theme by <a href="http://templated.co" rel="nofollow" target="_blank">TEMPLATED</a>.</p>
-</div>	
+</div>
+<button type="button" id="BackTop" class="toTop-arrow"></button>
+<script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+</script>	
 </body>
 </html>

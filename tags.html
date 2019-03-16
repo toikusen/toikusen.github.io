@@ -8,7 +8,7 @@
 <link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
 <link href="default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <div id="header-wrapper">
@@ -30,7 +30,7 @@
 			<h2>Tags</h2>
 		</div>
 		<ul class="actions">
-			<li><a href="#" class="button">Home</a>
+			<li><a href="https://toikusen.github.io" class="button">Home</a>
 			<footer id = "class"></footer></li>
 		</ul>
 	</div>
@@ -38,21 +38,15 @@
 <div id="wrapper">
 	<div id="three-column" class="container">
 		<div class="title">
-			<h2>Community</h2>
-			<span class="byline">Contact me</span>
+			<h2>Tags</h2>
+			<span class="byline">
+			<div class="tag-cloud-tags">
+              <a href="/學習/" style="font-size: 20px; color: #6f6f6f">學習</a>
+              <a href="/Diary/" style="font-size: 20px; color: #6f6f6f">Diary</a>
+              <a href="https://www.facebook.com/%E8%BC%94%E5%A4%A7%E7%AB%B9%E5%8F%8Bx%E8%8D%89%E8%8E%93%E9%80%B1-807099509326072/?epa=SEARCH_BOX" style="font-size: 20px; color: #6f6f6f">竹友草莓週</a>
+            </div></span>
 		</div>
-		<div class="boxA">
-			<a href="https://www.facebook.com/profile.php?id=100003252636929" title="Facebook → 杜昱成" target="_blank"fa fa-facebook><span class="fa fa-facebook"></span></a>
-			<p></p>
-		</div>
-		<div class="boxB">
-			<a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=tuyucheng0407@gmail.com" title="E-Mail → tuyucheng0407@gmail.com" target="_blank"fa fa-envelope><span class="fa fa-envelope"></span></a>
-			<p></p>
-		</div>
-		<div class="boxC">
-			<a href="https://www.instagram.com/yu_cheng_tu_/?hl=zh-tw" title="Instagram → yu_cheng_tu_" target="_blank"fa fa-instagram><span class="fa fa-instagram"></span></a>
-			<p></p>
-		</div>
+
 	</div>
 </div>
 <div id="welcome">
@@ -63,13 +57,28 @@
 		</div>
 		<p></p>
 		<ul class="actions">
-			<li><a href="#" class="button">Home</a>
+			<font size="4"><li><a href="https://toikusen.github.io" class="button">Home</a>
 			<footer id = "class"></footer></li></li>
 		</ul>
 	</div>
 </div>
 <div id="copyright" class="container">
 	<p>&copy; 2019 toikusen | Theme by <a href="http://templated.co" rel="nofollow" target="_blank">TEMPLATED</a>.</p>
-</div>	
+</div>
+<button type="button" id="BackTop" class="toTop-arrow"></button>
+<script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+</script>	
 </body>
 </html>
