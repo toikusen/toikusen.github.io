@@ -28,10 +28,15 @@
 	
 	ol, ul
 	{
-		padding: 0;
+		padding: 100;
 		list-style: none;
 	}
-	
+
+	ul li{
+　　width:80px;
+　　float:center;
+　　}
+
 	p
 	{
 		line-height: 180%;
@@ -57,7 +62,8 @@
 		margin: 0em auto;
 		width: 1200px;
 	}
-	
+
+
 /*********************************************************************************/
 /* Image Style                                                                   */
 /*********************************************************************************/
@@ -104,8 +110,9 @@
 
 	ul.style1
 	{
+		font-size: 3em;
 	}
-
+	
 
 /*********************************************************************************/
 /* Social Icon Styles                                                            */
@@ -145,7 +152,7 @@
 		height: 40px;
 		line-height: 40px;
 		border-radius: 20px;
-		text-align: center;
+		text-align: left;
 		color: #FFFFFF;
 	}
 	
@@ -261,6 +268,7 @@
 	
 	.title h2
 	{
+		text-align:center;
 		font-size: 2.7em;
 	}
 	
@@ -269,6 +277,7 @@
 		font-size: 1.3em;
 		color: rgba(255,255,255,0.60);
 	}
+
 
 /*********************************************************************************/
 /* Header                                                                        */
@@ -342,7 +351,7 @@
 	{
 		display: block;
 		float: left;
-		text-align: center;
+		text-align: left;
 	}
 	
 	#menu li a, #menu li span
@@ -514,3 +523,41 @@
 		color: rgba(0,0,0,.5);
 	}
 
+
+/*********************************************************************************/
+/* back-to-top                                                                         */
+/*********************************************************************************/
+
+/* 40px */
+.toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 40%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #DDDDDD;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
