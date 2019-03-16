@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">TOIKUSEN's BLOG</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="active"><a href="https://toikusen.github.io/archives" accesskey="1" title="">Archives</a></a></li>
+				<li><a href="#" accesskey="2" title="">Tags</a></li>
+				<li><a href="#" accesskey="3" title="">About</a></li>
+				<li><a href="https://github.com/toikusen" accesskey="4" title="Github → toikusen" target="_blank">Github</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="banner" class="container">
+		<div class="title">
+			<h2>Tags</h2>
+		</div>
+		<ul class="actions">
+			<li><a href="https://toikusen.github.io" class="button">Home</a>
+			<footer id = "class"></footer></li>
+		</ul>
+	</div>
+</div>
+<div id="wrapper">
+	<div id="three-column" class="container">
+		<div class="title">
+			<h2>Tags</h2>
+			<span class="byline">
+			<div class="tag-cloud-tags">
+              <a href="/tags/學習/" style="font-size: 20px; color: #6f6f6f">學習</a>
+              <a href="/tags/Diary/" style="font-size: 20px; color: #6f6f6f">Diary</a>
+              <a href="https://www.facebook.com/%E8%BC%94%E5%A4%A7%E7%AB%B9%E5%8F%8Bx%E8%8D%89%E8%8E%93%E9%80%B1-807099509326072/?epa=SEARCH_BOX" style="font-size: 20px; color: #6f6f6f">竹友草莓週</a>
+            </div></span>
+		</div>
+
+	</div>
+</div>
+<div id="welcome">
+	<div class="container">
+		<div class="title">
+			<h2></h2>
+			<span class="byline"></span>
+		</div>
+		<p></p>
+		<ul class="actions">
+			<font size="4"><li><a href="https://toikusen.github.io" class="button">Home</a>
+			<footer id = "class"></footer></li></li>
+		</ul>
+	</div>
+</div>
+<div id="copyright" class="container">
+	<p>&copy; 2019 toikusen | Theme by <a href="http://templated.co" rel="nofollow" target="_blank">TEMPLATED</a>.</p>
+</div>
+<button type="button" id="BackTop" class="toTop-arrow"></button>
+<script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+</script>	
+</body>
+</html>
