@@ -297,8 +297,7 @@
 		position: relative;
 		padding: 5em 0em 7em 0em;
 		background: #111111 url(images/01.jpg) no-repeat center;
-		background-size: max-width100%;height: auto!important;
-	}
+		background-size: cover;
 	}
 
 	#header
