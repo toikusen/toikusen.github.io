@@ -559,3 +559,17 @@
 	right: 0.5rem;
 }
 .toTop-arrow:focus {outline: none;}
+
+/*RWD*/
+
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+	@media only screen and (max-width: 768px){
+		/* For mobile phones:*/
+		[class*="col-"]{
+			width: 100%;
+	}
+	@media only screen and (orientation:landscape){
+		body{
+			background-color: lightblue;
+		}
+	}
