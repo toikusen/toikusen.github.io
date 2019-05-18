@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet" />
+    <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="header-wrapper">
+        <div id="header" class="container">
+            <div id="logo">
+                <h1><a href="#">TOIKUSEN's BLOG</a></h1>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="/archives" accesskey="1" title="">Archives</a></a></li>
+                    <li><a href="/tags" accesskey="2" title="">Tags</a></li>
+                    <li><a href="/about" accesskey="3" title="">About</a></li>
+                    <li><a href="/photography" accesskey="4" title="">Photography</a></li>
+                    <li><a href="https://github.com/toikusen" accesskey="5" title="Github → toikusen" target="_blank">Github</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="banner" class="container">
+            <div class="title">
+                <h2>Tags</h2>
+            </div>
+            <ul class="actions">
+                <li>
+                    <a href="https://toikusen.github.io" class="button">Home</a>
+                    <footer id="class"></footer>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="three-column" class="container">
+            <div class="title">
+                <h2>Google Maps</h2>
+                    <style type="text/css">
+                        html, body {
+                            height: 100%;
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        #map {
+                            height: 700px;
+                            width: 100%;
+                        }
+                    </style>
+                <body>
+                    <div id="map"></div>
+                    <script type="text/javascript">
+
+                        var map;
+                        function initMap() {
+                            map = new google.maps.Map(document.getElementById('map'), {
+                                center: { lat: 25.04, lng: 121.512 },
+                                zoom: 6
+                            });
+                        }
+                    </script>
+                    <script async=async defer=defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjIcNQzOn9VYt0ItAtbRiebvpd0hQ5bQU&callback=initMap">
+                    </script>
+
+
+            <span class="byline">
+            </span>
+        </div></span>
+    </div>
+
+</div>
+</div>
+<div id="welcome">
+    <div class="container">
+        <div class="title">
+            <h2></h2>
+            <span class="byline"></span>
+        </div>
+        <p></p>
+        <ul class="actions">
+            <font size="4">
+                <li>
+                    <a href="https://toikusen.github.io" class="button">Home</a>
+                    <footer id="class"></footer>
+                </li></li>
+            </font>
+        </ul>
+    </div>
+</div>
+<div id="copyright" class="container">
+    <p>&copy; 2019 toikusen | Theme by <a href="http://templated.co" rel="nofollow" target="_blank">TEMPLATED</a>.</p>
+</div>
+<button type="button" id="BackTop" class="toTop-arrow"></button>
+<script>
+    $(function () {
+        $('#BackTop').click(function () {
+            $('html,body').animate({ scrollTop: 0 }, 333);
+        });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $('#BackTop').fadeIn(222);
+            } else {
+                $('#BackTop').stop().fadeOut(222);
+            }
+        }).scroll();
+    });
+</script>
+</body>
+</html>
